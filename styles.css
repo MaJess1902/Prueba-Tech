@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+/*Estilos base*/
+
+.globalContainer {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.globalContainer__buttonContainer {
+    margin-bottom: 10px;
+}
+
+.button {
+    border: 2px solid #eef1f3;
+    border-radius: 6px;
+    color: rgb(251, 247, 247);
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #F83B32;
+
+}
+
+.Column1 {
+    height: 500px;
+    width: 300px;
+    border: solid 1px black;
+}
+
+.Column2 {
+    display: none;
+}
+
+.textArea {
+    width: 286px;
+    height: 64px;
+    margin-left: 5px;
+}
+
+
+/*Estilos para Tamaños grandes*/
+
+@media (min-width: 952px) {
+    .globalContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .globalContainer__columnsContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .globalContainer__buttonContainer {
+        margin-bottom: 30px;
+    }
+
+    .Column1 {
+        height: 600px;
+        width: 400px;
+        border: solid 1px black;
+    }
+
+    .Column2 {
+        display: block;
+        height: 600px;
+        width: 400px;
+        border: solid 1px black;
+    }
+
+    .textArea {
+        margin: 34px 50px;
+    }
+}
